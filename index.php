@@ -15,7 +15,8 @@ $dbconn = pg_connect("host=" . $servername . " dbname=" . $database . " user=". 
 
 // Realizando una consulta SQL
 $query = "SELECT * FROM espcommands where espid like '" . $nombre . "' " ;
-echo $query;
+//$query = 'SELECT * FROM espcommands'
+//echo $query;
 
 $result = pg_query($query) or die('La consulta fallo: ' . pg_last_error());
 
