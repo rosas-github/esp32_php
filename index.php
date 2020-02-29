@@ -28,5 +28,5 @@ pg_free_result($result);
 // Cerrando la conexión
 pg_close($dbconn);
 
-#echo "<h2>Hola, desde Rosas-github</2>";
+//echo "<h2>Hola, desde Rosas-github</2>";
 ?>
