@@ -14,7 +14,7 @@ $dbconn = pg_connect("host=" . $servername . " dbname=" . $database . " user=". 
     or die('No se ha podido conectar: ' . pg_last_error());
 
 // Realizando una consulta SQL
-$query = "SELECT * FROM espcommands where espexecuted IS NULL AND espid like '" . $nombre . "' " ;
+$query = 'SELECT * FROM espcommands where';
 $result = pg_query($query) or die('La consulta fallo: ' . pg_last_error());
 
 while($row = pg_fetch_array($result, null, PGSQL_ASSOC)) {
