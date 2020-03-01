@@ -6,7 +6,7 @@ $username = "ejxfckxmrixihs";
 $password = "6e1eaa5b5aa1d10c3290bb1795f9263bb629a3bb80ffda285c33862603a95273";
 
 $espid = $_POST["espid"]; //igual a nombre en consulta "select"
-$cmd = $_POST["cmd"];
+$cmd = $_POST["cmd"]; //GET
 
 // Conectando y seleccionado la base de datos  
 $dbconn = pg_connect("host=" . $servername . " dbname=" . $database . " user=". $username . " password=" . $password)
